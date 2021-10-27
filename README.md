@@ -2,7 +2,7 @@
 example of automated testbench using raw txt file as simulation test vectors
 
 
-use test_vectors.v file as primary source file
+use test_vectors.v file as primary verilog source file
 
 use testvectors.txt file as simulation source file
 
