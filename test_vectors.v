@@ -69,12 +69,7 @@ module adder4bit_tb;
         if ({co, s} !== {expected_co, expected_s}) begin
             $display("Error! %d + %d + %d -> %d, expecting %d",
                      x, y, ci, {co, s}, {expected_co, expected_s});
-            // printf-style formatting:
-            // %d = print number as decimal
-            // %u = print number as unsigned decimal
-            // %x = print number as hexadecimal value
-            // %f = print number as floating point
-            // %s = print string
+        
             errors = errors + 1;
         end
         
@@ -82,9 +77,6 @@ module adder4bit_tb;
         vectornum = vectornum + 1;
         
         // Part C: check for end condition
-        // int table[10];
-        // int x = table[0]; // access first element of table
-        // table[3] = 0x23; // access fourth element of table
         if (testvectors[vectornum] === 14'bx) begin
             $display("Done! %d tests completed with %d errors.",
                      vectornum, errors);
