@@ -42,3 +42,5 @@ for i in range(512):
     txtoutput = txtoutput + finout + "\n"
 
 print(txtoutput, file=open(r"PATH\testvectors.txt", "x"))
+#  r"..." for printing raw text output to file 
+#  file location is set to directly change textvectors.txt source file from the verilog simulation folder
