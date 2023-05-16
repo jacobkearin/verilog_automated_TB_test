@@ -53,7 +53,7 @@ module adder4bit_tb;
     // Chunk 2: load test vectors, initialize variables
     initial begin
         // file format: xxxx_yyyy_i_o_ssss
-        $readmemb("C:/Users/keajacm/Documents/Digital/Lab_7/Lab_7.srcs/sim_1/imports/Digital/testvectors.txt", testvectors);
+        $readmemb("path_to_testvectors.txt, testvectors);
         vectornum = 0;
         errors = 0;
     end
